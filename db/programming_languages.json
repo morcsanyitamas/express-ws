@@ -1,13 +1,13 @@
 [
   {
     "langid": 1,
-    "name": "Javascript",
-    "dob": 1995,
-    "github23_pr": 9.6,
-    "github23_stars": 16.6,
-    "designer": "Brendan Eich",
-    "maintainer": "ECMA International, W3C",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png"
+    "name": "-",
+    "dob": "-",
+    "github23_pr": 0,
+    "github23_stars": 0,
+    "designer": "-",
+    "maintainer": "-",
+    "logo": "-"
   },
   {
     "langid": 2,
@@ -98,5 +98,25 @@
     "designer": "Yukihiro Matsumoto",
     "maintainer": "Yukihiro Matsumoto",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/480px-Ruby_logo.svg.png"
+  },
+  {
+    "langid": 12,
+    "name": "BASIC",
+    "dob": 1964,
+    "github23_pr": 1,
+    "github23_stars": 1,
+    "designer": "John F. Kemeny, Thomas E. Kurtz",
+    "maintainer": "",
+    "logo": ""
+  },
+  {
+    "langid": 13,
+    "name": "BASIC",
+    "dob": 1964,
+    "github23_pr": 1,
+    "github23_stars": 1,
+    "designer": "John F. Kemeny, Thomas E. Kurtz",
+    "maintainer": "",
+    "logo": ""
   }
 ]

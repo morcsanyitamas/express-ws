@@ -15,7 +15,7 @@ POST http://localhost:4000/api/v2/languages/
 Content-Type: application/json
 
 {
-  "langid": 12,
+  "langid": 13,
   "name": "BASIC",
   "dob": 1964,
   "github23_pr": 1.0,
