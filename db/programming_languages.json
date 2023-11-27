@@ -1,0 +1,102 @@
+[
+  {
+    "langid": 1,
+    "name": "Javascript",
+    "dob": 1995,
+    "github23_pr": 9.6,
+    "github23_stars": 16.6,
+    "designer": "Brendan Eich",
+    "maintainer": "ECMA International, W3C",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png"
+  },
+  {
+    "langid": 2,
+    "name": "Python",
+    "dob": 1991,
+    "github23_pr": 17.2,
+    "github23_stars": 18,
+    "designer": "Guido van Rossum",
+    "maintainer": "Python Software Foundation",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/438px-Python-logo-notext.svg.png"
+  },
+  {
+    "langid": 3,
+    "name": "Go",
+    "dob": 2009,
+    "github23_pr": 10.4,
+    "github23_stars": 12.1,
+    "designer": "Robert Griesemer, Rob Pike, Ken Thomson",
+    "maintainer": "Google",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/512px-Go_Logo_Blue.svg.png"
+  },
+  {
+    "langid": 4,
+    "name": "Java",
+    "dob": 1995,
+    "github23_pr": 11.3,
+    "github23_stars": 8,
+    "designer": "James Gosling",
+    "maintainer": "Oracle",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/234px-Java_programming_language_logo.svg.png"
+  },
+  {
+    "langid": 5,
+    "name": "Kotlin",
+    "dob": 2011,
+    "github23_pr": 1.4,
+    "github23_stars": 1.3,
+    "designer": "JetBrains",
+    "maintainer": "JetBrains",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kotlin_logo_2021.svg/512px-Kotlin_logo_2021.svg.png"
+  },
+  {
+    "langid": 6,
+    "name": "PHP",
+    "dob": 1995,
+    "github23_pr": 5.3,
+    "github23_stars": 3.6,
+    "designer": "Rasmus Lerdorf",
+    "maintainer": "The PHP Development Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png"
+  },
+  {
+    "langid": 7,
+    "name": "C#",
+    "dob": 2000,
+    "github23_pr": 3.1,
+    "github23_stars": 4.1,
+    "designer": "Anders Hejlsberg",
+    "maintainer": "Microsoft",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/512px-C_Sharp_wordmark.svg.png"
+  },
+  {
+    "langid": 8,
+    "name": "Swift",
+    "dob": 2014,
+    "github23_pr": 0.9,
+    "github23_stars": 1.7,
+    "designer": "Apple",
+    "maintainer": "Apple",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/320px-Swift_logo.svg.png"
+  },
+  {
+    "langid": 9,
+    "name": "R",
+    "dob": 1993,
+    "github23_pr": 0.05,
+    "github23_stars": 0.1,
+    "designer": "Ross Ihaka, Robert Gentleman",
+    "maintainer": "R Core Team",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/310px-R_logo.svg.png"
+  },
+  {
+    "langid": 10,
+    "name": "Ruby",
+    "dob": 1995,
+    "github23_pr": 5,
+    "github23_stars": 1.9,
+    "designer": "Yukihiro Matsumoto",
+    "maintainer": "Yukihiro Matsumoto",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/480px-Ruby_logo.svg.png"
+  }
+]

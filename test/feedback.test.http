@@ -1,0 +1,14 @@
+### TASK 10
+GET http://localhost:4000/api/v2/feedbacks
+
+### TASK 11
+GET http://localhost:4000/api/v2/feedbacks/summary/11
+
+### TASK 12
+POST http://localhost:4000/api/v2/feedbacks/vote/11
+Content-Type: application/json
+
+{
+  "vote": 1
+}
+

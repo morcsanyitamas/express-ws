@@ -1,0 +1,82 @@
+### TASK 2
+GET http://localhost:4000/
+
+### TASK 4
+GET http://localhost:4000/api/v2/languages
+
+### TASK 5
+GET http://localhost:4000/api/v2/languages/3
+
+### TASK 5
+GET http://localhost:4000/api/v2/languages/123
+
+### TASK 6
+POST http://localhost:4000/api/v2/languages/
+Content-Type: application/json
+
+{
+  "langid": 12,
+  "name": "BASIC",
+  "dob": 1964,
+  "github23_pr": 1.0,
+  "github23_stars": 1.0,
+  "designer": "John F. Kemeny, Thomas E. Kurtz",
+  "maintainer": "",
+  "logo": ""
+}
+
+### TASK 7
+DELETE http://localhost:4000/api/v2/languages/1
+
+### TASK 8
+PUT http://localhost:4000/api/v2/languages/1
+Content-Type: application/json
+
+{
+  "name": "-",
+  "dob": "-",
+  "github23_pr": 0.0,
+  "github23_stars": 0.0,
+  "designer": "-",
+  "maintainer": "-",
+  "logo": "-"
+}
+
+### TASK 9
+PATCH http://localhost:4000/api/v2/languages/1
+Content-Type: application/json
+
+{
+
+  "logo": "https://openclipart.org/image/800px/272343"
+}
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?search=ja
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?search=eich
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?search=microsoft
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=name&dir=asc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=name&dir=desc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=dob&dir=asc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=dob&dir=desc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=github23_stars&dir=asc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=github23_stars&dir=desc
+
+### TASK 13-14
+GET http://localhost:4000/api/v2/languages/?orderBy=github23_stars&dir=desc&search=ja
