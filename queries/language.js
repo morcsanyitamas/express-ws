@@ -11,7 +11,7 @@ async function readLanguages() {
   return languages;
 }
 
-async function getLanguages(search) {
+async function getLanguages(orderBy, dir, search) {
   let languages = await readLanguages();
   
   // filter
@@ -25,7 +25,30 @@ async function getLanguages(search) {
     });
   }
   
+  if ((!orderBy && dir) || (!dir && orderBy)) {
+    throw new Error("Invalid order parameters");
+  }
+  // XOR ^
+/*
+  true true => order
+  false false => X
+  true false
+  false true 
 
+*/
+
+  // order
+  if (orderBy && dir) {
+    languages.sort((a, b) => {
+      let compare;
+      if (typeof a[orderBy] === "string") {
+        compare = a[orderBy].localeCompare(b[orderBy]);
+      } else if (typeof a[orderBy] === "number") {
+        compare = a[orderBy] - b[orderBy];
+      }
+      return dir === "asc" ? compare : -compare;
+    });
+  }
 
   return languages;
 }

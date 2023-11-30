@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/v2/languages', async (req, res, next) => {
-  const { search } = req.query;
+  const { orderBy, dir, search } = req.query;
 
   try {
-    const languages = await languageQuery.getLanguages(search);
+    const languages = await languageQuery.getLanguages(orderBy, dir, search);
     res.status(200).send(languages);
   } catch (error) {
     res.status(500).send(error.message);
