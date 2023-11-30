@@ -76,6 +76,36 @@ function logger(req, res, next) {
   next();
 }
 
+app.get("/api/v2/feedbacks", async (req, res) => {
+  try {
+    const feedbacks = await feedbackQuery.getFeedbacks();
+    res.status(200).send(feedbacks);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.get("/api/v2/feedbacks/summary/:langid", async (req, res) => {
+  try {
+    const feedbacks = await feedbackQuery.getFeedbackSummary(req.params.langid);
+    res.status(200).send(feedbacks);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.post("/api/v2/feedbacks/vote/:langid", async (req, res) => {
+  try {
+    const vote = req.body.vote;
+    const langid = parseInt(req.params.langid);
+    await feedbackQuery.vote(langid, vote);
+    res.json({
+      msg: `Vote ${vote} was added to language with ID ${langid}`,
+    });
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
 
 function main(){
   app.listen(PORT, () => {
