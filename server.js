@@ -61,6 +61,15 @@ app.patch("/api/v2/languages/:langid", async (req, res) => {
   }
 });
 
+app.delete("/api/v2/languages/:langid", async (req, res) => {
+  try {
+    await languageQuery.deleteLanguage(req.params.langid);
+    res.status(200);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
 function logger(req, res, next) {
   const ts = new Date();
   console.log(`[${ts}]: ${req.method} ${req.originalUrl}`);

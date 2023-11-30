@@ -82,10 +82,22 @@ async function patchLanguage(id, lang) {
   }
 }
 
+async function deleteLanguage(langid) {
+  const languages = await readLanguages();
+  const index = languages.findIndex((lang) => lang.langid === parseInt(langid));
+  if (index !== -1) {
+    languages.splice(index, 1);
+    await fs.writeFile(languageFilePath, JSON.stringify(languages));
+  } else {
+    throw new Error(`Language with id ${langid} does not exist`);
+  }
+}
+
 module.exports = {
   getLanguages,
   getLanguage,
   createLanguage,
   replaceLanguage,
-  patchLanguage
+  patchLanguage,
+  deleteLanguage
 };
